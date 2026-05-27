@@ -9,4 +9,4 @@ jobs:
     environment: production
     steps:
       - name: echo env
-        run: echo ${{vars.APP_ENV}}
+        run: echo ${{  vars.APP_ENV  }}
