@@ -1,0 +1,14 @@
+name: hello-actions
+
+on:
+  push:
+
+jobs:
+  echo-env:
+    runs-on: ubuntu-latest
+    environment: production
+
+    needs: build
+    steps:
+      - name: echo env
+        run: echo ${{env.APP_ENV}}
