@@ -1,4 +1,4 @@
-name: echo-env
+name: hello-actions
 
 on:
   push:
